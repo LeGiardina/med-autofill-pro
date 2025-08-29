@@ -1,1 +1,46 @@
-<!DOCTYPE html><html><head><meta charset='utf-8'><title>FloNote — Clinical Autofill (V1)</title><link rel='stylesheet' href='css/style.css'></head><body><div class='container'><h1>FloNote — Clinical Autofill (V1)</h1><div class='card'><p><a href='assessment.html'>Clinical Assessment</a> · <a href='studio.html'>Template Studio</a></p><p class='small'>Tip: add your OPENAI_API_KEY on Render to enable AI extraction.</p></div></div></body></html>
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FloNote — Clinical Intelligence</title>
+<link rel="stylesheet" href="css/neo.css">
+</head>
+<body>
+<header class="container nav">
+  <div class="brand"><img src="img/logo.svg"/><span class="badge">V1 • Premium</span></div>
+  <nav>
+    <a href="assessment.html">Assessment</a>
+    <a href="studio.html">Template Studio</a>
+    <a class="cta primary" href="assessment.html">Launch</a>
+  </nav>
+</header>
+<main class="container hero">
+  <section class="grid">
+    <div class="hero-inner">
+      <div>
+        <h1>Voice → <span class="grad">Structured Notes</span></h1>
+        <p class="lead">Dictate once. FloNote extracts entities and autopopulates your assessment templates with precision.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn primary" href="assessment.html">Start Assessment →</a>
+          <a class="btn" href="studio.html">Template Studio</a>
+        </div>
+        <div class="cards" style="margin-top:18px">
+          <div class="card"><b>Operator UX</b><div class="lead" style="font-size:14px">Minimal clicks, keyboard‑first controls.</div></div>
+          <div class="card"><b>Structured output</b><div class="lead" style="font-size:14px">Consistent fields ready for downstream systems.</div></div>
+          <div class="card"><b>Guideline links</b><div class="lead" style="font-size:14px">Attach reference URLs to templates.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <b>Quick start</b>
+        <ul class="lead" style="font-size:14px">
+          <li>Click <em>Start Mic</em>, speak, then <em>Extract</em>.</li>
+          <li>Auto‑fill places data into Subjective/Objective/Plan.</li>
+          <li>Insert published templates for confirmed diagnoses.</li>
+        </ul>
+        <p class="lead" style="font-size:12px;margin-top:8px">Enable <code>OPENAI_API_KEY</code> on Render to activate AI extraction.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section"><footer>© <span id="y"></span> FloNote.</footer></section>
+</main>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body></html>

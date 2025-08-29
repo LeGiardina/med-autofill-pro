@@ -1,1 +1,40 @@
-<!DOCTYPE html><html><head><meta charset='utf-8'><title>Template Studio</title><link rel='stylesheet' href='css/style.css'></head><body><div class='container'><h1>Template Studio</h1><div class='row'><div class='card'><h2>Templates</h2><input id='search' placeholder='Search...'><button id='newBtn'>New</button><ul id='list'></ul></div><div class='card'><h2 id='editorTitle'>Editor</h2><div class='row'><input id='title' placeholder='Title'><input id='slug' placeholder='Slug'></div><div class='row'><input id='icd10' placeholder='ICD-10 (optional)'><input id='snomed' placeholder='SNOMED (optional)'></div><textarea id='body' rows='12' placeholder='Markdown body with {{variables}}'></textarea><div><h3>Variables</h3><div id='vars'></div><button id='addVar'>+ Add variable</button></div><div><h3>Guideline Links</h3><div id='links'></div><button id='addLink'>+ Add link</button></div><div style='margin-top:8px'><button id='save'>Save</button><button id='submit'>Submit</button><button id='publish'>Publish</button></div><div class='small' id='status'></div></div></div></div><script src='js/studio.js'></script></body></html>
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Template Studio • FloNote</title>
+<link rel="stylesheet" href="css/neo.css">
+</head>
+<body>
+<header class="container nav">
+  <div class="brand"><img src="img/logo.svg"/><span class="badge">Template Studio</span></div>
+  <nav><a href="index.html">Home</a><a class="cta" href="assessment.html">Assessment</a></nav>
+</header>
+<main class="container">
+  <div class="grid" style="padding:18px">
+    <div class="layout" style="grid-template-columns: 320px 1fr">
+      <div>
+        <label>Templates</label>
+        <input id="q" placeholder="Search...">
+        <button id="newBtn" class="btn" style="margin-top:8px">New</button>
+        <ul id="list" style="list-style:none; padding-left:0; margin-top:12px"></ul>
+      </div>
+      <div>
+        <label>Title</label><input id="title">
+        <div style="display:flex; gap:8px; margin-top:8px">
+          <input id="slug" placeholder="Slug">
+          <input id="icd" placeholder="ICD-10 (optional)">
+          <input id="snomed" placeholder="SNOMED (optional)">
+        </div>
+        <label style="margin-top:8px">Markdown body with {{variables}}</label>
+        <textarea id="body" rows="16"></textarea>
+        <div style="display:flex; gap:8px; margin-top:10px">
+          <button id="save" class="btn">Save</button>
+          <button id="submit" class="btn">Submit</button>
+          <button id="publish" class="btn primary">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="js/studio.js"></script>
+</body></html>
