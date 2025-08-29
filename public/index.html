@@ -1,70 +1,46 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FloNote • Clinical Notes in Seconds</title>
-<link rel="stylesheet" href="css/lightclinic.css">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FloNote — Clinical Notes in Seconds</title>
 <link rel="preconnect" href="https://rsms.me/"><link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-</head>
+<link rel="stylesheet" href="css/lightclinic.css"></head>
 <body>
-<nav class="nav">
-  <div class="brand"><img src="img/logo.svg" alt="FloNote"><span>FloNote</span></div>
-  <div>
-    <a class="btn link" href="studio.html">AI Studio</a>
-    <a class="btn link" href="dashboard.html">Dashboard</a>
+<header class="nav"><div class="container row">
+  <div class="brand"><div class="logo"></div>FloNote</div>
+  <nav>
+    <a class="btn" href="dashboard.html">Dashboard</a>
+    <a class="btn" href="studio.html">AI Studio</a>
     <a class="btn" href="record.html">Login</a>
     <a class="btn primary" href="record.html">Try Scribe</a>
-  </div>
-</nav>
+  </nav>
+</div></header>
 
-<section class="hero">
-  <div class="copy">
-    <h1>Clinical Notes Done in Seconds</h1>
-    <p>Your ambient medical scribe that transcribes, structures, and drafts documentation. HIPAA-ready, smart templates, and one‑click EHR export.</p>
-    <div class="actions">
-      <a class="btn primary" href="record.html">Start Free</a>
-      <a class="btn ghost" href="dashboard.html">See Demo</a>
-      <span class="badge">No credit card required</span>
-    </div>
-  </div>
-
-  <div class="phone" aria-hidden="true">
-    <div class="mock">
-      <div class="ui-head">
-        <div class="dot"></div><div class="dot"></div><div class="dot"></div>
-        <span style="margin-left:6px;color:#64748b">My Scribes</span>
-      </div>
-      <div class="mock-body">
-        <div class="mock-card">
-          <b>John Doe</b> &nbsp; <span class="badge">SOAP</span>
-          <div style="font-size:13px;color:#64748b;margin-top:6px">
-            Subjective, Objective, Assessment, Plan
-          </div>
-        </div>
-        <div class="mock-card">
-          <b>Recording • 03:47</b>
-          <div style="height:36px;background:linear-gradient(90deg,#c7d2fe,#e9d5ff);border-radius:8px;margin-top:6px"></div>
-        </div>
-        <div class="mock-card">
-          <b>Transcribe</b>
-          <div style="height:36px;background:linear-gradient(90deg,#e0e7ff,#f0f9ff);border-radius:8px;margin-top:6px"></div>
-        </div>
+<main class="container">
+  <section class="hero">
+    <div>
+      <h1>Clinical Notes Done in Seconds</h1>
+      <p class="lead">Ambient scribe that transcribes, structures, and drafts documentation. HIPAA‑ready. Smart templates. One‑click EHR export.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn primary" href="record.html">Start Free</a>
+        <a class="btn" href="dashboard.html">See Demo</a>
+        <span class="btn" style="pointer-events:none">No credit card required</span>
       </div>
     </div>
-    <div class="float f1"><b>Recording</b> <span class="badge">03:47</span></div>
-    <div class="float f2"><b>John Doe</b><span class="badge">Your scribe is ready</span></div>
-    <div class="float f3"><b>Transcribe</b></div>
-  </div>
-</section>
+    <div class="mock" aria-hidden="true">
+      <div class="mockbar"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+      <div class="panel"><b>John Doe</b> <span style="font-size:12px;color:#64748b">SOAP</span></div>
+      <div class="panel"><b>Recording • 03:47</b><div class="wave" style="margin-top:6px"></div></div>
+      <div class="panel"><b>Transcribe</b><div style="height:34px;background:#eef2ff;border-radius:8px;margin-top:6px"></div></div>
+    </div>
+  </section>
 
-<section class="section">
-  <div class="grid3">
-    <div class="card"><b>Ambient capture</b><div style="color:#64748b">Hands‑free dictation with live transcript preview.</div></div>
-    <div class="card"><b>Smart templates</b><div style="color:#64748b">SOAP & H&P with variables, ICD hints, and guideline links.</div></div>
-    <div class="card"><b>One‑click export</b><div style="color:#64748b">Push finalized notes to your EHR via FHIR.</div></div>
-  </div>
-</section>
+  <section class="section">
+    <div class="grid3">
+      <div class="card"><b>Ambient capture</b><div style="color:#64748b">Hands‑free dictation with live preview.</div></div>
+      <div class="card"><b>Smart templates</b><div style="color:#64748b">SOAP & H&P with variables and guideline links.</div></div>
+      <div class="card"><b>One‑click export</b><div style="color:#64748b">Push finalized notes to your EHR via FHIR.</div></div>
+    </div>
+  </section>
+</main>
 
-<div class="footer">© 2025 FloNote • Built for clinicians</div>
-</body>
-</html>
+<footer class="footer">© 2025 FloNote • Built for clinicians</footer>
+</body></html>
