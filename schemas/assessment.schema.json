@@ -1,15 +1,4 @@
 {
   "title": "Assessment",
-  "type": "object",
-  "properties": {
-    "subjective": {
-      "type": "object"
-    },
-    "objective": {
-      "type": "object"
-    },
-    "plan": {
-      "type": "string"
-    }
-  }
+  "type": "object"
 }

@@ -1,40 +1,25 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Template Studio • FloNote</title>
-<link rel="stylesheet" href="css/neo.css">
-</head>
-<body>
-<header class="container nav">
-  <div class="brand"><img src="img/logo.svg"/><span class="badge">Template Studio</span></div>
-  <nav><a href="index.html">Home</a><a class="cta" href="assessment.html">Assessment</a></nav>
-</header>
-<main class="container">
-  <div class="grid" style="padding:18px">
-    <div class="layout" style="grid-template-columns: 320px 1fr">
-      <div>
-        <label>Templates</label>
-        <input id="q" placeholder="Search...">
-        <button id="newBtn" class="btn" style="margin-top:8px">New</button>
-        <ul id="list" style="list-style:none; padding-left:0; margin-top:12px"></ul>
-      </div>
-      <div>
-        <label>Title</label><input id="title">
-        <div style="display:flex; gap:8px; margin-top:8px">
-          <input id="slug" placeholder="Slug">
-          <input id="icd" placeholder="ICD-10 (optional)">
-          <input id="snomed" placeholder="SNOMED (optional)">
-        </div>
-        <label style="margin-top:8px">Markdown body with {{variables}}</label>
-        <textarea id="body" rows="16"></textarea>
-        <div style="display:flex; gap:8px; margin-top:10px">
-          <button id="save" class="btn">Save</button>
-          <button id="submit" class="btn">Submit</button>
-          <button id="publish" class="btn primary">Publish</button>
-        </div>
-      </div>
-    </div>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Studio • FloNote</title><link rel="stylesheet" href="css/clinic.css"></head>
+<body><div class="app" style="grid-template-columns:280px 1fr">
+  <div class="topbar">
+    <div class="brand"><img src="img/logo.svg"><div class="badge">AI Studio</div></div>
+    <div><a class="btn" href="dashboard.html">Back to Dashboard</a><a class="btn primary" href="assessment.html">New Assessment</a></div>
   </div>
-</main>
+  <aside class="side">
+    <h6>Template Builder</h6>
+    <button class="btn" id="add">＋ Add Template</button>
+    <ul id="list" class="list" style="margin-top:12px"></ul>
+  </aside>
+  <main class="main">
+    <div class="card">
+      <label>Title</label><input id="title">
+      <div class="grid2"><div><label>Slug</label><input id="slug"></div><div><label>ICD-10 (optional)</label><input id="icd"></div></div>
+      <label style="margin-top:8px">Body (Markdown / {{variables}})</label>
+      <textarea id="body" rows="14"></textarea>
+      <div class="section"><button class="btn" id="save">Save</button><button class="btn" id="publish">Publish</button></div>
+    </div>
+  </main>
+</div>
 <script src="js/studio.js"></script>
 </body></html>

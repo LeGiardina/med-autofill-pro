@@ -1,0 +1,85 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FloNote • ClinicSuite</title><link rel="stylesheet" href="css/clinic.css"></head>
+<body>
+<div class="app">
+  <div class="topbar">
+    <div class="brand"><img src="img/logo.svg"><div class="badge">ClinicSuite • 2025</div></div>
+    <div class="kpi">Status: <b>Connected</b> <span class="note">FHIR sandbox ready</span></div>
+    <div class="">
+      <a class="btn" href="record.html">🎙️ New Recording</a>
+      <a class="btn" href="studio.html">AI Studio</a>
+      <a class="btn primary" href="assessment.html">Start Assessment</a>
+    </div>
+  </div>
+
+  <aside class="side">
+    <h6>My Scribes</h6>
+    <div id="scribeList"></div>
+    <button class="btn" id="newScribe">＋ Add Scribe</button>
+    <h6>Workspace</h6>
+    <div class="item active"><span>Dashboard</span><span>›</span></div>
+    <div class="item"><span>Archive</span><span>›</span></div>
+    <div class="item"><span>EHR Connections</span><span>›</span></div>
+  </aside>
+
+  <main class="main">
+    <div class="card section">
+      <div class="tabs">
+        <div class="tab active" data-t="note">Clinical Note</div>
+        <div class="tab" data-t="email">Patient Email</div>
+        <div class="tab" data-t="codes">ICD/CPT</div>
+        <div class="tab" data-t="transcript">Transcript</div>
+      </div>
+      <div id="t-note">
+        <div class="grid2">
+          <div>
+            <label>Chief Complaint</label><input id="cc">
+            <label>HPI</label><textarea id="hpi" rows="6"></textarea>
+            <label>ROS</label><textarea id="ros" rows="4"></textarea>
+          </div>
+          <div>
+            <div class="grid3">
+              <div><label>BP Sys</label><input id="bp_sys"></div>
+              <div><label>BP Dia</label><input id="bp_dia"></div>
+              <div><label>HR</label><input id="hr"></div>
+              <div><label>RR</label><input id="rr"></div>
+              <div><label>Temp (C)</label><input id="temp"></div>
+              <div><label>SpO2</label><input id="spo2"></div>
+            </div>
+            <label>Exam</label><textarea id="exam" rows="4"></textarea>
+            <label>Labs</label><textarea id="labs" rows="3"></textarea>
+            <label>Imaging</label><textarea id="imaging" rows="3"></textarea>
+          </div>
+        </div>
+        <label>Assessment & Plan</label><textarea id="plan" rows="8"></textarea>
+        <div class="section">
+          <button class="btn" id="extract">✨ Extract</button>
+          <button class="btn" id="insertTemplates">Insert Templates</button>
+          <button class="btn ghost" id="pushFHIR">⬆ Push to EHR (FHIR)</button>
+        </div>
+      </div>
+      <div id="t-email" style="display:none"><textarea id="email" rows="12" style="width:100%"></textarea></div>
+      <div id="t-codes" style="display:none"><ul id="codes"></ul></div>
+      <div id="t-transcript" style="display:none">
+        <div class="section"><button class="btn" id="startMic">Start Mic</button> <button class="btn" id="stopMic">Stop</button></div>
+        <textarea id="transcript" rows="10" style="width:100%"></textarea></div>
+    </div>
+  </main>
+
+  <aside class="right">
+    <div class="card">
+      <h3 style="margin:0 0 8px">AI Copilot</h3>
+      <div id="chat" class="chat">
+        <div class="msg">Ask about this scribe, generate letters, or request plans.</div>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:8px">
+        <input id="q" placeholder="Ask a medical question" style="flex:1">
+        <button id="ask" class="btn primary">Ask</button>
+      </div>
+    </div>
+    <footer>FloNote ClinicSuite</footer>
+  </aside>
+</div>
+<script src="js/dashboard.js"></script>
+</body></html>

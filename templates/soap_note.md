@@ -1,7 +1,5 @@
-# SOAP Note
+# SOAP
 
-**S**: {{subjective}}
-
-**O**: {{objective}}
-
-**A/P**: {{plan}}
+**S**: {{s}}
+**O**: {{o}}
+**A/P**: {{ap}}
