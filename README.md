@@ -1,3 +1,2 @@
-# FloNote V1
-
-FastAPI + static frontend for clinical assessments & templates.
+# FloNote V1 — full UI
+Run: `uvicorn app:app --host 0.0.0.0 --port 8000`

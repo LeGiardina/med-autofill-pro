@@ -1,0 +1,1 @@
+**Assessment:** Type 2 diabetes mellitus.\n**Plan:** Lifestyle + meds per ADA; screenings; f/u 3 mo.

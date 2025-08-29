@@ -1,0 +1,1 @@
+**Assessment:** Community‑acquired pneumonia.\n**Plan:** Outpatient antibiotics; supportive care; f/u 48–72h.

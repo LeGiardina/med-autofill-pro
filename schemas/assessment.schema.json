@@ -1,0 +1,13 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object",
+  "required":["patient","subjective","objective","assessment","plan","mapping"],
+  "properties":{
+    "patient":{"type":"object","properties":{"id":{"type":"string"},"name":{"type":"string"}}},
+    "subjective":{"type":"object","properties":{"chief_complaint":{"type":"string"},"hpi":{"type":"string"},"ros":{"type":"string"}}},
+    "objective":{"type":"object","properties":{"vitals":{"type":"object","properties":{"bp_systolic":{"type":"integer"},"bp_diastolic":{"type":"integer"},"hr":{"type":"integer"},"rr":{"type":"integer"},"temp_c":{"type":"number"},"spo2":{"type":"integer"}}},"exam":{"type":"string"},"labs":{"type":"string"},"imaging":{"type":"string"}}},
+    "assessment":{"type":"array","items":{"type":"object","properties":{"label":{"type":"string"},"icd10":{"type":"string"},"status":{"type":"string"}}}},
+    "plan":{"type":"array","items":{"type":"object","properties":{"for":{"type":"string"},"orders":{"type":"string"},"medications":{"type":"string"},"education":{"type":"string"},"follow_up":{"type":"string"}}}},
+    "mapping":{"type":"array","items":{"type":"object","properties":{"key":{"type":"string"},"target_path":{"type":"string"}}}}
+  }
+}

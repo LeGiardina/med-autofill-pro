@@ -1,0 +1,1 @@
+**Assessment:** Primary hypertension.\n**Plan:** Lifestyle, meds per ACC/AHA; f/u 2–4 wks.
