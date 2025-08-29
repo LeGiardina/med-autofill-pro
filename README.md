@@ -1,3 +1,3 @@
-# Medical Assessment Autofill — PRO
+# FloNote V1
 
-Production-ready app.
+FastAPI + static frontend for clinical assessments & templates.

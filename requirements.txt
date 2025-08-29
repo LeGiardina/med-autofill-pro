@@ -1,6 +1,6 @@
 fastapi
-uvicorn[standard]
-openai
-python-dotenv
+uvicorn
 jinja2
 sqlalchemy
+python-dotenv
+python-multipart
