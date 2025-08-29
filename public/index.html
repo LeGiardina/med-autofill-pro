@@ -1,46 +1,70 @@
 <!doctype html>
-<html lang="en"><head>
+<html lang="en">
+<head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FloNote — Clinical Intelligence</title>
-<link rel="stylesheet" href="css/neo.css">
+<title>FloNote • Clinical Notes in Seconds</title>
+<link rel="stylesheet" href="css/lightclinic.css">
+<link rel="preconnect" href="https://rsms.me/"><link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
 <body>
-<header class="container nav">
-  <div class="brand"><img src="img/logo.svg"/><span class="badge">V1 • Premium</span></div>
-  <nav>
-    <a href="assessment.html">Assessment</a>
-    <a href="studio.html">Template Studio</a>
-    <a class="cta primary" href="assessment.html">Launch</a>
-  </nav>
-</header>
-<main class="container hero">
-  <section class="grid">
-    <div class="hero-inner">
-      <div>
-        <h1>Voice → <span class="grad">Structured Notes</span></h1>
-        <p class="lead">Dictate once. FloNote extracts entities and autopopulates your assessment templates with precision.</p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn primary" href="assessment.html">Start Assessment →</a>
-          <a class="btn" href="studio.html">Template Studio</a>
-        </div>
-        <div class="cards" style="margin-top:18px">
-          <div class="card"><b>Operator UX</b><div class="lead" style="font-size:14px">Minimal clicks, keyboard‑first controls.</div></div>
-          <div class="card"><b>Structured output</b><div class="lead" style="font-size:14px">Consistent fields ready for downstream systems.</div></div>
-          <div class="card"><b>Guideline links</b><div class="lead" style="font-size:14px">Attach reference URLs to templates.</div></div>
-        </div>
+<nav class="nav">
+  <div class="brand"><img src="img/logo.svg" alt="FloNote"><span>FloNote</span></div>
+  <div>
+    <a class="btn link" href="studio.html">AI Studio</a>
+    <a class="btn link" href="dashboard.html">Dashboard</a>
+    <a class="btn" href="record.html">Login</a>
+    <a class="btn primary" href="record.html">Try Scribe</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="copy">
+    <h1>Clinical Notes Done in Seconds</h1>
+    <p>Your ambient medical scribe that transcribes, structures, and drafts documentation. HIPAA-ready, smart templates, and one‑click EHR export.</p>
+    <div class="actions">
+      <a class="btn primary" href="record.html">Start Free</a>
+      <a class="btn ghost" href="dashboard.html">See Demo</a>
+      <span class="badge">No credit card required</span>
+    </div>
+  </div>
+
+  <div class="phone" aria-hidden="true">
+    <div class="mock">
+      <div class="ui-head">
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        <span style="margin-left:6px;color:#64748b">My Scribes</span>
       </div>
-      <div class="card">
-        <b>Quick start</b>
-        <ul class="lead" style="font-size:14px">
-          <li>Click <em>Start Mic</em>, speak, then <em>Extract</em>.</li>
-          <li>Auto‑fill places data into Subjective/Objective/Plan.</li>
-          <li>Insert published templates for confirmed diagnoses.</li>
-        </ul>
-        <p class="lead" style="font-size:12px;margin-top:8px">Enable <code>OPENAI_API_KEY</code> on Render to activate AI extraction.</p>
+      <div class="mock-body">
+        <div class="mock-card">
+          <b>John Doe</b> &nbsp; <span class="badge">SOAP</span>
+          <div style="font-size:13px;color:#64748b;margin-top:6px">
+            Subjective, Objective, Assessment, Plan
+          </div>
+        </div>
+        <div class="mock-card">
+          <b>Recording • 03:47</b>
+          <div style="height:36px;background:linear-gradient(90deg,#c7d2fe,#e9d5ff);border-radius:8px;margin-top:6px"></div>
+        </div>
+        <div class="mock-card">
+          <b>Transcribe</b>
+          <div style="height:36px;background:linear-gradient(90deg,#e0e7ff,#f0f9ff);border-radius:8px;margin-top:6px"></div>
+        </div>
       </div>
     </div>
-  </section>
-  <section class="section"><footer>© <span id="y"></span> FloNote.</footer></section>
-</main>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body></html>
+    <div class="float f1"><b>Recording</b> <span class="badge">03:47</span></div>
+    <div class="float f2"><b>John Doe</b><span class="badge">Your scribe is ready</span></div>
+    <div class="float f3"><b>Transcribe</b></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="grid3">
+    <div class="card"><b>Ambient capture</b><div style="color:#64748b">Hands‑free dictation with live transcript preview.</div></div>
+    <div class="card"><b>Smart templates</b><div style="color:#64748b">SOAP & H&P with variables, ICD hints, and guideline links.</div></div>
+    <div class="card"><b>One‑click export</b><div style="color:#64748b">Push finalized notes to your EHR via FHIR.</div></div>
+  </div>
+</section>
+
+<div class="footer">© 2025 FloNote • Built for clinicians</div>
+</body>
+</html>
